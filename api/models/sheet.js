@@ -6,12 +6,7 @@ const hooks = {};
 
 const tableName = 'sheet';
 
-const Sheet = sequelize.define('sheet', {
-    id: {
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER,
-    },
+const Sheet = sequelize.define('Sheet', {
     name: {
         type: Sequelize.STRING,
     },

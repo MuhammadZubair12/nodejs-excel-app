@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const Attendence = require('../models/Attendence');
+const Sheet = require('../models/Sheet');
 const authService = require('../services/auth.service');
 const bcryptService = require('../services/bcrypt.service');
 
@@ -39,7 +40,7 @@ const UserController = () => {
       res.status(500).json({ error: err.message });
     }
   };
-  const sheet = (req, res) => {
+  const sheet = async (req, res) => {
     let sheetdata = [];
     const body = req.body;
     body.forEach((row) => {
@@ -57,7 +58,7 @@ const UserController = () => {
       sheetdata.push(cs)
     })
     sheetdata.shift();
-    return models.sheet.bulkCreate(sheetdata).then(_cs=> {
+    return await Sheet.bulkCreate(sheetdata).then(_cs=> {
       return res.status(200).json(_cs);
     }).catch(err=> {
       return res.status(500).json(err);

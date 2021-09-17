@@ -1,24 +1,32 @@
 const development = {
-  database: 'attendence-app',
+  database: 'excellapp',
   username: 'postgres',
-  password: '12345',
+  password: 'c00822631',
   host: 'localhost',
   dialect: 'postgres',
 };
 
 const testing = {
-  database: 'attendence-app',
+  database: 'excellapp',
   username: 'postgres',
-  password: '12345',
+  password: 'c00822631',
   host: 'localhost',
   dialect: 'postgres',
 };
 
+// const production = {
+//   database: 'excellapp',
+//   username: 'postgres',
+//   password: 'c00822631',
+//   host: 'localhost',
+//   dialect: 'postgres',
+// };
+
 const production = {
-  database: 'd3g3r6cgassgs9',
-  username: 'nhhcgzhtczjnld',
-  password: 'd530e36e76537fa7cf5b78c23f5f789e74c7e1c803abe7c3e90195bdece4bcee',
-  host: 'ec2-54-81-126-150.compute-1.amazonaws.com',
+  database: 'd3747kpl01ei9j',
+  username: 'htdkkfbomiqhtk',
+  password: 'c62f5af41e7b5dba254deec4862ea195027f768591ff08c3818e1f4a4f3bcb14',
+  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
   dialect: 'postgres',
 };
 
