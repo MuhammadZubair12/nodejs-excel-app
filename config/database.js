@@ -35,6 +35,11 @@ switch (process.env.NODE_ENV) {
       host: connection.testing.host,
       dialect: connection.testing.dialect,
       operatorsAliases: false,
+      dialectOptions: {
+        ssl: { rejectUnauthorized: false },
+        useUTC: true,
+        sslmode: require
+      },
       pool: {
         max: 5,
         min: 0,
@@ -51,6 +56,11 @@ switch (process.env.NODE_ENV) {
       host: connection.development.host,
       dialect: connection.development.dialect,
       operatorsAliases: false,
+      dialectOptions: {
+        ssl: { rejectUnauthorized: false },
+        useUTC: true,
+        sslmode: require
+      },
       pool: {
         max: 5,
         min: 0,
