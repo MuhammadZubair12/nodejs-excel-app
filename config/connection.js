@@ -1,34 +1,25 @@
 const development = {
-  database: 'dcss0qle32guoj',
-  username: 'zlpxyafjsynnlb',
-  password: '11823af517496d201423e19f7345193a77e3f8140d939e910a7fe124d64aedab',
-  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
+  database: 'attendence-app',
+  username: 'postgres',
+  password: '12345',
+  host: 'localhost',
   dialect: 'postgres',
-  port:5432,
 };
 
 const testing = {
-  database: 'dcss0qle32guoj',
-  username: 'zlpxyafjsynnlb',
-  password: '11823af517496d201423e19f7345193a77e3f8140d939e910a7fe124d64aedab',
-  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
+  database: 'attendence-app',
+  username: 'postgres',
+  password: '12345',
+  host: 'localhost',
   dialect: 'postgres',
 };
 
-// const production = {
-//   database: 'excellapp',
-//   username: 'postgres',
-//   password: 'c00822631',
-//   host: 'localhost',
-//   dialect: 'postgres',
-// };
-
 const production = {
-  database: 'dcss0qle32guoj',
-  username: 'zlpxyafjsynnlb',
-  password: '11823af517496d201423e19f7345193a77e3f8140d939e910a7fe124d64aedab',
-  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
-  dialect: 'postgres'
+  database: 'demcurrida6b6j',
+  username: 'phwhffkjabwblg',
+  password: '9414e22e6d03db6fb6dfdb29b417011a813abfa15f2a7f7a68cf8f3d2ce47fcd',
+  host: 'ec2-54-196-133-177.compute-1.amazonaws.com',
+  dialect: 'postgres',
 };
 
 // const production = {
@@ -44,3 +35,4 @@ module.exports = {
   testing,
   production,
 };
+

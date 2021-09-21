@@ -11,6 +11,7 @@
   "bugs": {
     "url": "https://github.com/aichbauer/express-rest-api-boilerplate/issues"
   },
+  
   "scripts": {
     "prestart": "npm run drop-sqlite-db || true",
     "start": "npm run nodemon",
